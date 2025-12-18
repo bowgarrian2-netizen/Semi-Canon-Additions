@@ -20,10 +20,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModBlocks.BUTTERCUP);
+                        entries.add(ModBlocks.PINK_DAISY);
 
                     }).build());
-
-
 
     public static void registerItemGroups() {
         SemiCanonAdditions.LOGGER.info("Registering Item Groups for " + SemiCanonAdditions.MOD_ID);

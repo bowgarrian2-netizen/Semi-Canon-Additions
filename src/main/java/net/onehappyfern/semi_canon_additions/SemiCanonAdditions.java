@@ -2,6 +2,8 @@ package net.onehappyfern.semi_canon_additions;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.block.FlowerPotBlock;
 import net.onehappyfern.semi_canon_additions.block.ModBlocks;
 import net.onehappyfern.semi_canon_additions.item.ModItemGroups;
 import net.onehappyfern.semi_canon_additions.item.ModItems;

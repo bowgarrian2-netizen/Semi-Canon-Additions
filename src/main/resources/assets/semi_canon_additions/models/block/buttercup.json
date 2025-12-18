@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "semi_canon_additions:block/buttercup"
+  }
+}

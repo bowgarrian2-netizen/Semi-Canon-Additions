@@ -1,9 +1,9 @@
 package net.onehappyfern.semi_canon_additions.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +13,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.onehappyfern.semi_canon_additions.SemiCanonAdditions;
+
+import static net.minecraft.block.Blocks.createFlowerPotBlock;
 
 //Blocks Below
 
@@ -41,6 +43,37 @@ public class ModBlocks {
             )
     );
 
+    public static final Block BUTTERCUP = registerBlock("buttercup",
+            new FlowerBlock(
+                    StatusEffects.POISON,
+                    0.35f,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .noCollision()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block PINK_DAISY = registerBlock("pink_daisy",
+            new FlowerBlock(
+                    StatusEffects.POISON,
+                    0.35f,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .noCollision()
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.GRASS)
+                            .offset(AbstractBlock.OffsetType.XZ)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block POTTED_BUTTERCUP = registerBlock("potted_buttercup", createFlowerPotBlock(BUTTERCUP));
+    public static final Block POTTED_PINK_DAISY = registerBlock("potted_pink_daisy", createFlowerPotBlock(PINK_DAISY));
+
 //Blocks Above
 
     private static Block registerBlock(String name, Block block) {
@@ -58,7 +91,6 @@ public class ModBlocks {
         SemiCanonAdditions.LOGGER.info("Registering Mod Blocks for " + SemiCanonAdditions.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.RUBY_BLOCK);
         });
     }
 }

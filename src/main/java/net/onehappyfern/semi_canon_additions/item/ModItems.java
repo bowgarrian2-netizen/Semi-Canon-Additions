@@ -23,7 +23,6 @@ public class ModItems {
         SemiCanonAdditions.LOGGER.info("Registering Mod Items for " + SemiCanonAdditions.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(RUBY);
         });
     }
 }
