@@ -1,3 +1,6 @@
 {
-  "item.semi_canon_additions.ruby": "Ruby"
+  "item.semi_canon_additions.ruby": "Ruby",
+  "block.semi_canon_additions.ruby_block": "Block of Ruby",
+
+  "itemgroup.semi_canon_additions.semi_canon_additions_items": "Semi Canon Addition Items"
 }

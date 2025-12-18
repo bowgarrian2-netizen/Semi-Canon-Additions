@@ -8,9 +8,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.onehappyfern.semi_canon_additions.SemiCanonAdditions;
 
+//Items Below
+
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
 
+//Items Above
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SemiCanonAdditions.MOD_ID, name), item);
