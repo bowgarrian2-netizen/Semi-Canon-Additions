@@ -1,6 +1,8 @@
 {
   "item.semi_canon_additions.ruby": "Ruby",
   "block.semi_canon_additions.ruby_block": "Block of Ruby",
+  "block.semi_canon_additions.ruby_ore": "Ruby Ore",
+  "block.semi_canon_additions.deepslate_ruby_ore": "Deepslate Ruby Ore",
 
-  "itemgroup.semi_canon_additions.semi_canon_additions_items": "Semi Canon Addition Items"
+  "itemgroup.semi_canon_additions.semi_canon_additions_items": "Semi Canon Additions Items"
 }

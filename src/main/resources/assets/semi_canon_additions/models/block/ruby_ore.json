@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "semi_canon_additions:block/ruby_ore"
+  }
+}
