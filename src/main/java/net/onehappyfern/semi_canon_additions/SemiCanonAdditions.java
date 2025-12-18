@@ -2,6 +2,7 @@ package net.onehappyfern.semi_canon_additions;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.onehappyfern.semi_canon_additions.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class SemiCanonAdditions implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
