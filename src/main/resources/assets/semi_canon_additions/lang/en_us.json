@@ -1,5 +1,9 @@
 {
   "item.semi_canon_additions.ruby": "Ruby",
+  "item.minecraft.potion.effect.wither_potion": "Potion of Decay",
+  "item.minecraft.splash_potion.effect.wither_potion": "Splash Potion of Decay",
+  "item.minecraft.lingering_potion.effect.wither_potion": "Lingering Potion of Decay",
+
   "block.semi_canon_additions.ruby_block": "Block of Ruby",
   "block.semi_canon_additions.ruby_ore": "Ruby Ore",
   "block.semi_canon_additions.deepslate_ruby_ore": "Deepslate Ruby Ore",
@@ -7,5 +11,7 @@
   "block.semi_canon_additions.buttercup": "Buttercup",
   "block.semi_canon_additions.pink_daisy": "Pink Daisy",
 
-  "itemgroup.semi_canon_additions.semi_canon_additions_items": "Semi Canon Additions Items"
+  "itemgroup.semi_canon_additions.semi_canon_additions_items": "Semi Canon Additions Items",
+
+  "entity.semi_canon_additions.moobloom": "Moobloom"
 }

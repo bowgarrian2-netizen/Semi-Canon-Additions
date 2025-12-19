@@ -1,6 +1,8 @@
 package net.onehappyfern.semi_canon_additions.block;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffects;
@@ -15,6 +17,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.onehappyfern.semi_canon_additions.SemiCanonAdditions;
 
 import static net.minecraft.block.Blocks.createFlowerPotBlock;
+import static net.minecraft.network.packet.CustomPayload.id;
 
 //Blocks Below
 
@@ -46,7 +49,7 @@ public class ModBlocks {
     public static final Block BUTTERCUP = registerBlock("buttercup",
             new FlowerBlock(
                     StatusEffects.POISON,
-                    0.35f,
+                    0.35F,
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.DARK_GREEN)
                             .noCollision()
@@ -60,7 +63,7 @@ public class ModBlocks {
     public static final Block PINK_DAISY = registerBlock("pink_daisy",
             new FlowerBlock(
                     StatusEffects.POISON,
-                    0.35f,
+                    0.35F,
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.DARK_GREEN)
                             .noCollision()
@@ -70,9 +73,10 @@ public class ModBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
-
-    public static final Block POTTED_BUTTERCUP = registerBlock("potted_buttercup", createFlowerPotBlock(BUTTERCUP));
-    public static final Block POTTED_PINK_DAISY = registerBlock("potted_pink_daisy", createFlowerPotBlock(PINK_DAISY));
+    public static final Block POTTED_BUTTERCUP = registerBlock("potted_buttercup",
+            createFlowerPotBlock(BUTTERCUP));
+    public static final Block POTTED_PINK_DAISY = registerBlock("potted_pink_daisy",
+            createFlowerPotBlock(PINK_DAISY));
 
 //Blocks Above
 
